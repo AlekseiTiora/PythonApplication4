@@ -5,7 +5,7 @@ from tkinter.filedialog import *
 import sys,fileinput
 from tkinter.messagebox import *
 root=Tk()
-root.geometry("1200x720")
+root.geometry("720x600")
 root.title("Описание машин")
 
 tabs=ttk.Notebook(root)
@@ -33,7 +33,7 @@ def image_f90():
 
 def image_e60():
     global img
-    img=PhotoImage(file="e60.png").subsample(2)
+    img=PhotoImage(file="e60.png").subsample(3)
     can.create_image(10,10,image=img,anchor=NW)
 
 def image_bmw():
